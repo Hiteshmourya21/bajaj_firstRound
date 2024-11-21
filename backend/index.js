@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json({ limit: '10mb' })); // Adjust size (e.g., 10mb, 50mb)
 app.use(express.urlencoded({ limit: '10mb', extended: true }));
-app.use(cors("http://localhost:3000"));
+app.use(cors("https://bajaj-firstround-frontend.onrender.com"));
 
 const PORT = process.env.PORT || 5000;
 
