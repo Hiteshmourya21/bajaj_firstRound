@@ -29,7 +29,7 @@ const App = () => {
         if (fileBase64) {
             payload.file = fileBase64; // Add the Base64 file to the JSON payload
         }
-        const response = await axios.post("http://localhost:5000/bfhl", payload);
+        const response = await axios.post("https://bajaj-backend-ib7z.onrender.com/bfhl", payload);
         setResponseData(response.data);
         console.log(response.data);
         // setTitle(response.data.);
